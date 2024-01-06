@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_creator.css">
+</head>
+<body>
+
+<div class="container">
+  <label for="activation-time">Activation Time:</label>
+  <input type="datetime-local" id="activation-time" name="activation-time"
+  name="activation-time" >
+
+  <label for="origin">Origin:</label>
+  <input type="text" id="origin" name="origin" 
+  placeholder='Example: Union Station GO'>
+
+  <label for="destination">Destination:</label>
+  <input type="text" id="destination" name="destination" 
+  placeholder='Example: University of Waterloo Terminal'>
+
+  <label for="ticketnum">Ticket Number:</label>
+  <input type="text" id="ticketnum" name="ticketnum" 
+  placeholder='Example: MZ58262734'>
+
+  <label for="color">Ticket Colour:</label>
+  <div id="color-selector" class="color-selector">
+    <!-- Predefined color tiles -->
+    <div class="color-tile" style="background-color: #315972;"></div>
+    <div class="color-tile" style="background-color: #378025;"></div>
+    <div class="color-tile" style="background-color: #7e743d"></div>
+    <div class="color-tile" style="background-color: #524a81;"></div>
+    <div class="color-tile" style="background-color: #915391;"></div>
+    <div class="color-tile" style="background-color: #6eb6b6;"></div>
+    
+  </div>
+  <p></p>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script src="creator.js"></script>
+
+</body>
+</html>
+
