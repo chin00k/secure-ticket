@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var selectedColor = document.querySelector('.color-tile.selected');
     
     // Check if any required field is empty
-    if (!activationTime || !origin || !destination || !ticketnum || !selectedColor ) {
+    if (!activationTime || !origin || !destination || !ticketnum || !selectedColor) {
       alert('Please fill out all fields.');
       return;
     }
