@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var ticketnum = document.getElementById('ticketnum').value;
     var selectedColor = document.querySelector('.color-tile.selected');
     
-    // Check if any required field is empty
-    if (!activationTime || !origin || !destination || !ticketnum || !selectedColor) {
+    // Check if any required field is empty !activationTime || !origin || !destination || !ticketnum ||
+    if (!selectedColor) {
       alert('Please fill out all fields.');
       return;
     }

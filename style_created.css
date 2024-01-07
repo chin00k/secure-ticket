@@ -119,7 +119,7 @@ html {
 
   .barcode {
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -166,7 +166,7 @@ html {
     font-size: 17px;
     position: absolute; 
     width: 95%;
-    top: 52%; 
+    top: 54%; 
     left: 32%;
     transform: translate(-50%, -50%); 
   }
@@ -177,7 +177,7 @@ html {
     font-size: 17px;
     position: absolute; 
     width: 10%;
-    top: 52%; 
+    top: 54%; 
     left: 58%;
     transform: translate(-50%, -50%); 
   }
@@ -202,7 +202,7 @@ html {
     z-index: 2;
     position: absolute; 
     width: 80%;
-    top: 66.3%; 
+    top: 68.3%; 
     left: 30%;
     transform: translate(-50%, -50%); 
   }
@@ -215,7 +215,7 @@ html {
     z-index: 2;
     position: absolute;
     width: 42%;
-    top: 66.3%; 
+    top: 68.3%; 
     left: 78%;
     transform: translate(-50%, -50%); 
   }
@@ -228,7 +228,7 @@ html {
     z-index: 2;
     position: absolute; 
     width: 80%;
-    top: 69%; 
+    top: 71%; 
     left: 28%;
     transform: translate(-50%, -50%); 
   }
@@ -241,7 +241,7 @@ html {
     z-index: 2;
     position: absolute; 
     width: 20%;
-    top: 69%; 
+    top: 71%; 
     left: 78%;
     transform: translate(-50%, -50%); 
   }
