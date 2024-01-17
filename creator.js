@@ -1,3 +1,16 @@
+var hasTouchScreen = false;
+
+if ("maxTouchPoints" in navigator) {
+    hasTouchScreen = navigator.maxTouchPoints > 0;
+} 
+
+if (!hasTouchScreen) {
+  alert(`It seems like you are using a desktop browser.
+This tool is intended to be used only on phones.
+Features may not look/behave correctly on desktop.`);
+ 
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.color-tile').forEach(function(tile) {
@@ -12,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-  
   
   function submitForm() {
     var activationTime = new Date(document.getElementById('activation-time').value);
