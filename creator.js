@@ -1,4 +1,5 @@
 var hasTouchScreen = false;
+var switchToAlt = true;
 
 if ("maxTouchPoints" in navigator) {
     hasTouchScreen = navigator.maxTouchPoints > 0;
@@ -32,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var destination = document.getElementById('destination').value;
     var ticketnum = document.getElementById('ticketnum').value;
     var selectedColor = document.querySelector('.color-tile.selected');
+
+    var tnstring = new String(document.getElementById('ticketnum').value);
     
     // Check if any required field is empty
     if (!activationTime || !origin || !destination || !ticketnum || !selectedColor) {
@@ -50,15 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var color = window.getComputedStyle(selectedColor).getPropertyValue('background-color');
   
   
-    // Store values in sessionStorage
     sessionStorage.setItem('activationTime', activationTime);
     sessionStorage.setItem('origin', origin);
     sessionStorage.setItem('destination', destination);
     sessionStorage.setItem('ticketnum', ticketnum);
     sessionStorage.setItem('color', color);
-  
-    // Open the new tab with the second page
-    window.open('created.html', '_blank');
+    
+    console.log(ticketnum);
+    console.log(tnstring);
+    console.log(typeof(ticketnum));
+
+    if (tnstring.startsWith('MZ')){
+      window.open('created.html', '_blank');
+    }
+    else{
+      window.open('alternate.html', '_blank');
+    }
   }
 
   function isDateValid(inputDate) {

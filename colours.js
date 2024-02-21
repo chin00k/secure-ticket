@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const num = parseInt(col, 16);
 
     let r = Math.min(255, Math.max(0, (num >> 16) + amt));
-    let b = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + amt)); // Darken more than lighten
+    let b = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + amt));
     let g = Math.min(255, Math.max(0, (num & 0x0000FF) + amt));
 
     return (usePound ? '#' : '') + (g | (b << 8) | (r << 16)).toString(16);
