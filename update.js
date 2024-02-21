@@ -76,11 +76,13 @@ function generateText(){
 
     if (String(sessionStorage.getItem('mode')) == "Railpass"){
         bigimage.src = "images/tix.png";
+        tx1 = `${String(sessionStorage.getItem('origin'))}${" to "}${String(sessionStorage.getItem('destination'))}
+        ${" - $10 One Day Pass"}`;
+    } else {
+        tx1 = `${String(sessionStorage.getItem('origin'))}${" to "}${String(sessionStorage.getItem('destination'))}`; 
     }
 
-    const tx1 = `${String(sessionStorage.getItem('origin'))}${" to "}${String(sessionStorage.getItem('destination'))}
-    ${" - $10 One Day Pass"}`;
-    const tx2 = String(sessionStorage.getItem('ticketnum'))
+    tx2 = String(sessionStorage.getItem('ticketnum'))
     textelem1.innerText = tx1;
     textelem2.innerText = tx2;
 }
