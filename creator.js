@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var destination = document.getElementById('destination').value;
     var ticketnum = document.getElementById('ticketnum').value;
     var selectedColor = document.querySelector('.color-tile.selected');
+    var dropdown = document.querySelector('select');
+
+    var selectedOption = dropdown.options[dropdown.selectedIndex].value;
 
     var tnstring = new String(document.getElementById('ticketnum').value);
     
@@ -58,10 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sessionStorage.setItem('destination', destination);
     sessionStorage.setItem('ticketnum', ticketnum);
     sessionStorage.setItem('color', color);
-    
-    console.log(ticketnum);
-    console.log(tnstring);
-    console.log(typeof(ticketnum));
+    sessionStorage.setItem('mode', selectedOption);
 
     if (tnstring.startsWith('MZ')){
       window.open('created.html', '_blank');

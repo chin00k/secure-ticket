@@ -70,7 +70,14 @@ function subtractTimes(time1, time2) {
 
 function generateText(){
     var textelem1 = document.getElementById("route");
-    var textelem2 = document.getElementById("tns")
+    var textelem2 = document.getElementById("tns");
+    var bigimage = document.getElementById("ticket_img");
+
+    console.log(bigimage.src);
+
+    if (String(sessionStorage.getItem('mode')) == "Railpass"){
+        bigimage.src = "images/tix.png";
+    }
 
     const tx1 = `${String(sessionStorage.getItem('origin'))}${" to "}${String(sessionStorage.getItem('destination'))}
     ${" - $10 One Day Pass"}`;

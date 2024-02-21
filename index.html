@@ -25,7 +25,6 @@
 
   <label for="color">Ticket Colour:</label>
   <div id="color-selector" class="color-selector">
-    <!-- Predefined color tiles -->
     <div class="color-tile" style="background-color: #315972;"></div>
     <div class="color-tile" style="background-color: #378025;"></div>
     <div class="color-tile" style="background-color: #7e743d"></div>
@@ -34,6 +33,15 @@
     <div class="color-tile" style="background-color: #6eb6b6;"></div>
     
   </div>
+
+  <p></p>
+
+  <label for="mode">Mode:</label>
+  <select name="mode" id="mode">
+    <option value="One-Way Ticket">One-Way Ticket</option>
+    <option value="Railpass">Railpass</option>
+  </select>
+
   <p></p>
   <button onclick="submitForm()">Submit</button>
 </div>

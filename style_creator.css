@@ -27,6 +27,13 @@ select, input {
   box-sizing: border-box;
 }
 
+select {
+  background-color: white; 
+  border: 1px solid #a8a8a8; 
+  padding: 10px; 
+  border-radius: 5px;
+}
+
 button {
   background-color: #4caf50;
   color: #fff;
