@@ -73,7 +73,6 @@ function generateText(){
     var textelem2 = document.getElementById("tns");
     var bigimage = document.getElementById("ticket_img");
 
-    console.log(bigimage.src);
 
     if (String(sessionStorage.getItem('mode')) == "Railpass"){
         bigimage.src = "images/tix.png";
