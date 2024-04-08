@@ -141,7 +141,7 @@ html {
     line-height: 1.3; 
     position: absolute; 
     width: 95%;
-    top: 77%; 
+    top: 71%; 
     left: 50%;
     transform: translate(-50%, -50%); 
   }
@@ -274,7 +274,7 @@ html {
     animation: marquee 8s linear infinite;
     color: var(--off-white); 
     font-family: "1-Bold";
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .marquee2 span {
