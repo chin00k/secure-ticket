@@ -9,8 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.circle').style.backgroundColor = baseColor;
   
   let time = 0;
-  const frequency = 0.25; 
-  const amplitude = 20; 
+  const frequency = 0.15; 
+  const amplitude = 20;
+  
+  const frequency2 = 0.15;
+  const amplitude2 = 90;
   
   function animateSinusoidal() {
     const sineValue = Math.sin(frequency * time) - 0.8;
@@ -27,7 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(animateSinusoidal);
   }
 
+  function animateSinusoidal2() {
+    const sineValue2 = Math.sin((frequency2 * time) - 3.33) + 1;
+
+    const amount = amplitude2 * sineValue2;
+
+    const newColor = calculateShade(baseColor, amount);
+
+    document.querySelector('.valid-for-travel').style.color = newColor;
+
+    time += 0.1;
+
+    requestAnimationFrame(animateSinusoidal2);
+  }
+
   animateSinusoidal();
+  animateSinusoidal2();
 
   function rgbToHex(rgb) {
     const values = rgb.substring(4, rgb.length - 1).replace(/ /g, '').split(',');

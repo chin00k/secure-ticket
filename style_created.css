@@ -89,7 +89,7 @@ html {
 
   .image-container {
     position: absolute;
-    top: 25;
+    top: 30%;
     left: 50%;
 
     transform: translateX(-50%);
@@ -119,7 +119,7 @@ html {
 
   .barcode {
     position: absolute;
-    top: 57%;
+    top: 58%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -137,7 +137,7 @@ html {
     color: var(--off-white); 
     text-align: center;
     font-family: "2", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.3; 
     position: absolute; 
     width: 95%;
@@ -150,11 +150,11 @@ html {
     color: var(--off-white); 
     text-align: center;
     font-family: "2";
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.4; 
     position: absolute; 
     width: 95%;
-    top: 30%; 
+    top: 40%; 
     left: 50%;
     transform: translate(-50%, -50%); 
   }
@@ -163,21 +163,21 @@ html {
     color: #39413f; 
     text-align: center;
     font-family: "1-Medium";
-    font-size: 17px;
+    font-size: 22px;
     position: absolute; 
     width: 95%;
-    top: 54%; 
-    left: 32%;
+    top: 53%; 
+    left: 33%;
     transform: translate(-50%, -50%); 
   }
 
   .tix-num-num {
     color: var(--text_col); 
     font-family: "1-Bold";
-    font-size: 17px;
+    font-size: 22px;
     position: absolute; 
     width: 10%;
-    top: 54%; 
+    top: 53%; 
     left: 58%;
     transform: translate(-50%, -50%); 
   }
@@ -186,7 +186,7 @@ html {
     color: var(--secondary_col);
     text-align: center; 
     font-family: "1-Medium";
-    font-size: 18px;
+    font-size: 22px;
     position: absolute; 
     width: 80%;
     top: 46%; 
@@ -198,11 +198,11 @@ html {
     color: var(--text_col);
     text-align: center; 
     font-family: "2-Black";
-    font-size: 10px;
+    font-size: 13px;
     z-index: 2;
     position: absolute; 
-    width: 80%;
-    top: 68.3%; 
+    width: 40%;
+    top: 70.5%; 
     left: 30%;
     transform: translate(-50%, -50%); 
   }
@@ -211,11 +211,11 @@ html {
     color: var(--text_col);
     text-align: center; 
     font-family: "2-Black";
-    font-size: 10px;
+    font-size: 13px;
     z-index: 2;
     position: absolute;
-    width: 42%;
-    top: 68.3%; 
+    width: 40%;
+    top: 70.5%; 
     left: 78%;
     transform: translate(-50%, -50%); 
   }
@@ -224,12 +224,12 @@ html {
     color: var(--text_col);
     text-align: center; 
     font-family: "1-Bold";
-    font-size: 13px;
+    font-size: 19px;
     z-index: 2;
     position: absolute; 
     width: 80%;
-    top: 71%; 
-    left: 28%;
+    top: 74%; 
+    left: 30%;
     transform: translate(-50%, -50%); 
   }
 
@@ -237,11 +237,11 @@ html {
     color: var(--text_col);
     text-align: center; 
     font-family: "1-Bold";
-    font-size: 13px;
+    font-size: 19px;
     z-index: 2;
     position: absolute; 
     width: 20%;
-    top: 71%; 
+    top: 74%; 
     left: 78%;
     transform: translate(-50%, -50%); 
   }
@@ -250,11 +250,11 @@ html {
     color: var(--off-white);
     text-align: center; 
     font-family: "1-Thin";
-    font-size: 35px;
+    font-size: 43px;
     z-index: 2;
     position: absolute; 
     top: 60%; 
-    left: 35%;
+    left: 31%;
   }
 
   /*The news ticker*/
