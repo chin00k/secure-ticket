@@ -44,16 +44,20 @@ function getTimeDifference(startDate, endDate) {
 function Elapsed() {
     var timerElement = document.getElementById('timesince');
 
+    const mode = sessionStorage.getItem('mode');
     const predeterminedTime = new Date(sessionStorage.getItem('activationTime'));
     const currentTime = new Date();
-
     
     const timeDiff = getTimeDifference(predeterminedTime, currentTime);
     
     timerElement.innerText = timeDiff
-    var bigTimer = subtractTimes('24:00:00' , timeDiff);
+    if (String(sessionStorage.getItem('mode')) != "Railpass"){
+        var bigTimer = subtractTimes('04:00:00' , timeDiff);
+    } else {
+        var bigTimer = subtractTimes('24:00:00' , timeDiff);
+    }
     document.getElementById('bigtime').innerHTML = bigTimer;
-  } 
+} 
 
 function subtractTimes(time1, time2) {
     const date1 = new Date(`1970-01-01T${time1}`);
