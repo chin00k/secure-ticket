@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sessionStorage.setItem('color', color);
     sessionStorage.setItem('mode', selectedOption);
 
-    if (tnstring.startsWith('MZ')){
+    if (tnstring.startsWith('MZ') || tnstring.startsWith('EK')){
       window.open('created.html', '_blank');
     }
     else{
